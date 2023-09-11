@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitnees world</title>
+</head>
+<link href="stylesheet" href="gym.css">
+<style>
+    body{
+    color:white;
+    margin:0px;
+    padding:0px;
+    background: url("https://t3.ftcdn.net/jpg/01/19/59/74/240_F_119597487_SnvLBdheEGOxu05rMQ5tCzo250cRrTz9.jpg") no-repeat center/cover;
+    height:100%;
+    width: 100%;
+    }
+    .left{
+        position:absolute;
+        top:12px;
+        left:60px;
+        display:inline-block;
+        /*border:2px solid red;*/
+
+    }
+    .left img{
+        display: block;
+        width: 136px;
+        filter:invert(100%);
+    }
+    .left div{
+        font-size: 16px;
+        text-align: center;
+    }
+    .centre{
+        display:block;
+        width: 48%;;
+        margin: 12px auto;
+       /* border:2px solid rgb(56, 205, 216);*/
+    }
+    .right{
+        position:absolute;
+        top:25px;
+        right:32px;
+        display:inline-block;
+       /* border:2px solid blue;
+        border:2px solid rgb(224, 15, 116);*/
+
+    }
+    .nevbar{
+        display: inline-block;
+    }
+    .nevbar li{
+        display:inline-block;
+        font-size: 25px;
+    }
+    .nevbar li a{
+        color:white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .nevbar li a:hover,.nevbar li a.active{
+        text-decoration: underline ;
+        color:rgb(180, 178, 178);
+    }
+    .btn{
+        margin:0px 9px;
+        color:white;
+        background-color: black ;
+        padding:4px 14px;
+        border:2px solid grey;
+        border-radius:10px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(35, 34, 34);
+    }
+    .container{
+        border:2px solid white;
+        margin: 121px 80px;
+        padding:75px;
+        width: 33%;
+        border-radius: 10%;
+    }
+    .form-group input{
+        text-align:center;
+        display:block;
+        width: 448px;
+        padding:1px;
+        border:6px solid black;
+        margin: 3px auto;
+        font-size:26px;
+        border-radius: 8px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .container h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo-->
+        <div class="left">        
+           <img src="https://img.freepik.com/free-vector/hard-athletic-fitness-club-gym-vintage-emblem-bodybuilder-arm-with-barbell_74855-11247.jpg?w=1060&t=st=1694091938~exp=1694092538~hmac=e44bd9d783658e430e5c9098915965b3c5e0cafba12104b37925cefb60e175e7">
+        <div>AIT FITNESS CLUB</div>
+        </div>
+        <!-- centre box for navbars-->
+        <div class="centre">
+            <ul class="nevbar">
+                <li><a href="#"  class="active">Home</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Fitness Centre</a></li>
+                <li><a href="#" >Contact US</a></li>
+               </ul>
+
+        </div>
+        <!-- right box for butttons-->
+        <div class="right">
+
+            <button class="btn">Email Us
+
+            </button>
+            <button class="btn">
+                Call Us Now
+            </button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of PUNE now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
