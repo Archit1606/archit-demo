@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0%;
+        padding:0%;
+    }
+    .navigation{
+        display: flex;
+    }
+    #navbar{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+
+    }
+    body{
+        background:url("https://cdn.pixabay.com/photo/2021/04/13/06/59/woman-6174830_1280.jpg")
+    }
+    
+    .navigation li{
+        list-style: none;
+        padding: 23px;
+        
+    }
+    .navigation li a{
+        color:white;
+        text-decoration: none;
+        font-size: 23px;
+    }
+    .navigation li a:hover{
+        background-color: white;
+        color: black;
+        border-radius: 6px;
+        padding: 9px;
+    }
+    #logo{
+        margin:10px 34px;
+        filter:invert(100%)
+    }
+    #logo img{
+        height:60px;
+        width: 80px;
+    }
+    .btn{
+        background-color: red;
+        margin:10px 34px;
+        color:white;
+        padding: 6px;
+        border-radius:8px;
+
+    }
+    .section-{
+        /* float: left; */
+        /* float: inline-end; */
+        border: 2px solid red;
+        position: relative;
+        display: block;
+        top:345px;
+        float:left;
+        color:white;
+        padding: 5px 23px;
+        margin:9px 33px;
+        align-items: center;
+        font-size: 23px;
+        
+    }
+
+</style>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo" > <img src="https://as1.ftcdn.net/v2/jpg/04/97/71/22/1000_F_497712278_zznNtIsVDaPbkwZaz8O2NPxpE02bL3CC.jpg" alt="error in loading the image"> </div>
+            <ul class="navigation">
+                <li class="item"><a href="#">Service</a></li>
+                <li class="item"><a href="#">Work</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#">Podcast</a></li>
+            </ul>
+            <button class="btn">MEET WITH THE DESINER
+
+            </button>
+        </nav>
+        </header>
+        <section class="section-">
+            <h1 class="text">Geta Website that makes you <i class="italic">proud</i></h1>
+            <p>experience our live design proces and get a profestional website in a little as one day. </p>
+            <button class="btn"> MEET WITH THE DESINER</button>
+        </section>
+    
+</body>
+</html>
