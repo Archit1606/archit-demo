@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+    #logo img{
+        height:80px;
+        width: 260px;
+        margin: 11px 99px;
+    }
+    .btn{
+        display:relative;
+        font-size: 19px;
+    
+        margin: -6px 10px;
+        padding:7px 13px;
+        background:red;
+        color: white;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(240, 55, 55);
+    }
+    .language {
+        /* margin:19px 14px; */
+        display:flex;
+        padding: 11px 35px;
+    margin: 42px 42px;
+    /* border: 2px solid red; */
+}
+      .language-picker__form label { 
+        font-size: 2px;
+        padding: 45px;
+        /* border: 2px solid red; */
+      }
+
+    
+    .ram{
+        display: relative;
+        font-size: 23px;
+        background:local;
+        color: white;
+        padding: 2px 23px;
+        top:45px;
+        border-radius: 6px;
+        
+
+    }
+    .home::before {
+    content: " ";
+    background: url("https://www.soda.com/wp-content/uploads/2020/03/what-movies-to-watch-on-netflix-1.jpg")no-repeat center/cover  ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.98;
+    top: 0px;
+    left: 0px
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    /* display: relative; */
+    margin:10px 50px;
+    align-items: center;
+    /* border:2px solid red; */
+    padding: 0px 0px;
+    justify-content: baseline;
+}
+.btn1{
+    background-color: red;
+    color:white;
+    font-size: 22px;
+    border-radius: 9px;
+    padding: 15px 55px;
+    cursor: pointer;
+}
+.top1{
+    font-size: 42px;
+}
+.paragraph{
+    font-size: 22px;
+}
+.middle form input{
+    font-size: 12px;
+    border-radius: 9px;
+    padding: 15px 55px;
+    margin: 23px 34px;
+    background:local;
+    color:white;
+
+}
+.middle form input:hover{
+    color:white
+}
+
+
+</style>
+
+<body>
+    <header class="home">
+        <nav class="navbar">
+
+            <div id="logo"> <img
+                    src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940"
+                    alt="error in loading the image"> </div>
+          <section class="language">
+            <div class="language-picker">
+                <form action="" class="language-picker__form">
+                  <label for="language-picker-select"></label>
+              
+                  <select class="ram" name="language-picker-select" id="language-picker-select">
+                    <option lang="en" value="english" selected>English</option>
+                    <option lang="hindi" value="italiano">hindi</option>
+                  </select>
+                </form>
+            </div>
+            <div><button class="btn">Sign in</button></div>
+            </section>
+
+        </nav>
+        <section class="middle">
+            <h1 class="top1"><b>The biggest Indian hits.The biggest Indian Stories.
+               </b></h1><h1 class="top1"> All streaming here.</b></h1>
+                <p class="paragraph">Watch anywhere. Cancel anytime</p>
+                <p class="paragraph">Ready to watch?Enter your emailto create or restart your membership.</p>
+                <form  class="form" action="" >
+                    <lable for="email" ></lable>
+                    <input type="email" name="email" id="email"  placeholder="Email address">
+                    <button class="btn1">Get started</button>
+                </form>
+        </section>
+    </header>
+    
+</body>
+
+</html>
