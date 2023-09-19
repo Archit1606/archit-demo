@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(19, 18, 18);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header {
+    width:75%;
+    height:95%;
+    border:1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+header .menu-slide, .song-slide{
+   position: relative;
+   width:25%;
+   height:85%;
+   /* border:1px solid white; */
+    background-color: rgb(9, 9, 9);
+    box-shadow: 5px 0px 2px rgb(19, 17, 17) ;
+    color: white;
+    
+ 
+
+}
+header .song-slide{
+    width:75%;
+    /* height: 20%; */
+    background-color:rgb(19, 18, 18) ;
+
+
+}
+
+header .master-slide{
+    width: 100%;
+    height: 15%;
+    background:rgb(23, 22, 22) ;
+    box-shadow: 5px 0px 2px  rgb(255, 249, 249);
+    /* border: 2px solid rgb(239, 6, 6); */
+
+}
+header .menu-slide img{
+    filter: invert();
+    height: 50px;
+    width:150px;
+    margin: 15px 20px;
+}
+header .menu-slide .playlist{
+    margin:40px 0px 0px 20px ;
+}
+header .menu-slide .playlist h4{
+    font-size:18px ;
+    font-weight: 400;
+    padding-bottom: 10px;
+    transition: 2s linear;
+}
+header .menu-slide .playlist h4:hover{
+    background-color: rgb(51, 40, 40);
+    border-radius: 2px;
+    /* padding: 2px 2px ; */
+    /* border: 2px solid rgb(51, 40, 40); */
+}
+header.menu-slide .playlist h4 span{
+    position: relative;
+    margin-right:35px;
+
+
+}
+header.menu-slide .playlist h4 span::before{
+    content:'';
+    position: absolute;
+    width: 4px;
+    border: 2px solid  rgb(51, 40, 40);
+    border-radius: 50%;
+    top:-40px;
+
+
+}
+header .menu-slide .playlist .active {
+    display: none;
+    
+}
+header .menu-slide .playlist .active .bi{
+    display: flex;
+    /* margin: 20px; */
+
+    
+}
+header .menu-slide .menu-song{
+    width:100%;
+    height: 320px;
+    /* border: 1px solid white; */
+    margin-top:39px;
+}
+header .menu-slide .menu-song li{
+    list-style-type: none;
+    padding: 5px 0px 5px 20px;
+    /* display: flex; */
+    cursor: pointer;
+    
+
+}
+header .menu-slide .menu-song  .SongItems1{
+    margin-top: 204px;
+}
+header .menu-slide .menu-song  .SongItems1 h5{
+    font-size: 19px;
+}
+header .menu-slide .menu-song  .SongItems1 .bi{
+    font-size: 24px;}
+header .menu-slide .menu-song li:hover{
+    background:rgb(51, 40, 40) ;
+    /* margin: 2px; */
+}
+header .menu-slide .menu-song li img{
+    width:30px;
+    height: 33px;
+    margin-left: 1px;
+    /* background-color: white; */
+
+}
+header .menu-slide .menu-song li h5{
+    position: relative;
+    padding: 2px 2px;
+    font-size: 15px;
+    margin-left: 2px;
+
+}
+header .menu-slide .menu-song li .bi{
+    position: relative;
+    margin: 2px 2px;
+    font-size: 18px;
+    
+}
+
+header .master-play{
+    display: flex;
+    align-items: center;
+    padding:0px 20px ;
+}
+header .master-play .wave{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    padding-bottom:4px ;
+}
+/* header .master-play .wave .wave1{
+    width: 3px;
+    height: 10px;
+    margin-right:3px ;
+    border-radius: 10px 10px 0px 0px;
+    background: ; */
+
+header .master-slide img{
+    color: white;
+    height: 50px;
+    width: 60px;
+    margin: 10px 25px;
+
+
+}
+header .master-slide{
+    display: flex;
+}
+header .master-slide h5{
+    color: white;
+    font-size: 13px;
+    line-height: 23px;
+    margin: 13px;
+
+}
+header .master-slide .icon{
+    font-size: 25px;
+    color: white;
+    margin:15px 20px 0px 40px;
+    padding: 0px 173px;
+
+}
+header .master-slide .icon  #circle{
+    font-size: 35px;
+}
+header .master-slide .icon .bi{
+    cursor: pointer;
+    outline:none;
+}
+header .master-slide span{
+    color: white;
+    font-size: 11px;
+    width: 32px;
+
+
+}
+header .master-slide .start{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+    
+    /* background-color: red; */
+}
+header .master-slide  .bar {
+    position:relative;
+    width: 75%;
+    height: 2px;
+    background-color: rgb(37, 36, 36);
+    margin: 0px 15px 0px 10px;
+
+}
+header .master-slide  .bar .bar2{
+    position: absolute;
+    /* background: rgb(134, 134, 239); */
+    width: 20%;
+    height: 100%;
+}
+header .master-slide  .bar .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    /* background-color: rgb(182, 182, 251); */
+    border-radius: 50%;
+    transition: 1s linear;
+}
+header .master-slide  .bar::before{
+    content:'';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 3px rgb(54, 53, 53);}
+    header .master-slide  .bar  input{
+        position: absolute;
+        width: 100%;
+        cursor: pointer;
+        ;
+    }
+    header .song-slide{
+        z-index: 2;
+    }
+    header .song-slide nav{
+        width: 90%;
+        height: 10%;
+        margin: auto;
+        /* border: 1px solid white; */
+        display: flex;
+        align-items:center ;
+        /* justify-content: space-between; */
+
+
+    }
+    header .song-slide  #aarrow2{
+        background: none;
+        filter: invert(53%);
+        font-size:23px ;
+    }
+    header .song-slide  #aarrow2:hover{
+        /* background-color: white; */
+        filter: none;
+        
+    }
+    header .song-slide  #aarrow1{
+        font-size: 23px;
+    }
+    header .song-slide  input{
+        border-radius: 23px;
+        width: 344px;
+        height: 33px;
+        padding: 13px;
+    
+    }
+    
+    header .song-slide #heading{
+        margin: 10px;
+    }
+    header .song-slide .box{
+        display: inline-block;
+        /* border: 2px solid rgb(192, 121, 235, 0.56); */
+        width: 350px;
+        height: 230px;
+        background-color: rgb(192, 121, 235, 0.56);
+        margin: 10px;
+        border-radius: 9px;
+    }
+    header .song-slide .box:hover{
+        background-color: rgb(192, 121, 235, 0.54)
+    }
+    header .song-slide  .pop{
+        margin: 10px;
+    }
+    header .song-slide .box2{
+        display: inline-block;
+        /* border: 2px solid rgb(239, 63, 63); */
+        width: 350px;
+        height: 230px;
+        background-color:rgb(239, 63, 63);
+        margin: 10px;
+        border-radius: 9px;
+    }
+    header .song-slide .box2:hover{
+        background-color:rgb(239, 63, 62,0.94);
+    }
+    header .song-slide .box1{
+        display: inline-block;
+        /* border: 2px solid rgb(179, 232, 179); */
+        width: 180px;
+        height: 180px;
+        background-color: rgb(12, 139, 99);
+        margin: 10px;
+        border-radius: 9px;
+    }
+    header .song-slide .box1:hover{
+        background-color: rgb(12, 139, 99,0.93);
+    }
+
+    header .song-slide .box3{
+
+        display: inline-block;
+        /* border: 2px solid blue; */
+        width: 180px;
+        height: 180px;
+        background-color: rgb(23, 51, 98);
+        margin: 10px;
+        border-radius: 9px;
+    }
+    header .song-slide .box3:hover{
+        background-color:rgb(23, 51, 98,0.92)}
+
+    header .song-slide .box4{
+
+        display: inline-block;
+        /* border: 2px solid rgb(243, 142, 243); */
+        width: 180px;
+        height: 180px;
+        background-color: rgb(192, 121, 235, 0.56);;
+        margin: 10px;
+        border-radius: 9px;
+    }
+    header .song-slide .box4:hover{
+        background-color:rgb(192, 121, 235, 0.54)}
+    
+    header .song-slide .box5{
+
+        display: inline-block;
+        /* border: 2px solid orange; */
+        width: 130px;
+        height: 180px;
+        background-color: rgb(171, 69, 86);
+        margin: 10px;
+        border-radius: 9px;
+
+    }
+    header .song-slide .box5:hover{
+        background-color: rgb(171, 69, 86,0.92);;
+    }
+    header .song-slide  .mad{
+        margin: 10px;
+    }
